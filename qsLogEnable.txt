@@ -1,0 +1,9 @@
+for qsLogEnable()
+
+I think we do not need any func for this part, use if else statement, ask user if need log s, if yes, set variable response as y, else n, so we put a if statement at every place where we need to logs.
+
+Ex:
+
+if(response == "y"){
+qsLog()...
+}
