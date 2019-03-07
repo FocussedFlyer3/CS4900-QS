@@ -8,21 +8,18 @@
 int qsValidate(char *line, int nLine, double *a, double *b, double *c){
 
   if(line == NULL){   //check for empty input line
-    return -1;
-
-  } else if(nLine < 5){   //check for insufficient values from input line
     fprintf(stderr, "[INVALID INPUT] input format: <a> <b> <c>\n");
     return -1;
 
   }
 
-    //pointer to remainder of string
-    char *remainder;
-
     //convert string to double
-    *a = atof(strtok_r(line," ",&remainder));
-    *b = atof(strtok_r(NULL," ",&remainder));
-    *c = atof(strtok_r(NULL," ",&remainder));
+    int ret = sscanf(line,"%lf %lf %lf" , a, b, c);
+
+    if(ret != 3){
+      fprintf(stderr, "[INVALID INPUT] input format: <a> <b> <c>\n");
+      return -1;
+    }
 
     //check values
     register int aclass = fpclassify(*a);
