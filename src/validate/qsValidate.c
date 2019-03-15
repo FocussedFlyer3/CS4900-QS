@@ -4,8 +4,18 @@
 #include <float.h>
 #include <math.h>
 #include "qsValidate.h"
+#include "../log/qsLog.h"
 
 int qsValidate(char *line, int nLine, double *a, double *b, double *c){
+
+  /*char buffer[1024];
+  sprintf(buffer,"Value passed into qsValidate():\n
+  \tline:%s\n
+  \tnLine:%d\n
+  \ta:%lf\n
+  \tb:%lf\n
+  \tc:%lf\n",line,nLine,a,b,c);
+  qsLog(buffer);*/
 
   if(line == NULL){   //check for empty input line
     fprintf(stderr, "[INVALID INPUT] input format: <a> <b> <c>\n");
@@ -18,7 +28,7 @@ int qsValidate(char *line, int nLine, double *a, double *b, double *c){
 
     if(ret != 3){
       fprintf(stderr, "[INVALID INPUT] input format: <a> <b> <c>\n");
-      return -1;
+
     }
 
     //check values

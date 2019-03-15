@@ -1,18 +1,18 @@
-/* Quadratic Solver */
-
 #include <stdio.h>
-#include "Includes/qsLog.h"
+#include <stdlib.h>
+#include "qsLog.h"
 
 int qsLog(char *info){
-    File *fp;
+FILE *fp;
+
 //open the file and append info to it
-fp = fopen("log.txt"."a");
+fp = fopen("logFile.txt","a");
 
 //function fprintf() log info to file
-fprint(fp, "%s\n", info);
+fprintf(fp, "%s\n", info);
 
 fclose(fp);
 
 return 0;
- 
+
 }
