@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "qsGetLine.h"
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const **argv) {
 
   char buffer[100];
 

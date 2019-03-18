@@ -1,8 +1,11 @@
 CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 
-test: test.c qsSolve.c qsSolve.h
-	$(CC) $(CFLAGS) -o test qsSolve.c test.c
+qsSolve.o: qsSolve.c
+	$(CC) -c qsSolve.c
+
+test: test.c qsSolve.c qsSolve.h ../log/qsLog.o
+	$(CC) $(CFLAGS) -o test qsSolve.c test.c ../log/qsLog.o
 
 clean:
-	rm  -f  *.o 
+	rm  -f  *.o
