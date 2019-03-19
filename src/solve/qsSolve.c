@@ -26,7 +26,6 @@ int qsSolve(double a, double b, double c, double *x1, double *x2){
 
     //check number of roots expected
     numRoots = (pow(b,2)) - (4 * a * c);
-    fprintf(stdout, "ROOTS: %d\n", numRoots);
 
     //compute roots value
     if(numRoots == 0){
