@@ -1,6 +1,6 @@
 # CS4900-QS
-Program: Quadratic Equation Solver
-Authors: Chee Kong Wong, Hong Lin Wei
+Program: Quadratic Equation Solver <br />
+Authors: Chee Kong Wong, Hong Lin Wei <br />
 
 # DIRECTORIES:
   * build/
