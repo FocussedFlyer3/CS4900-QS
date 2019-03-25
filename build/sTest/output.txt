@@ -1,0 +1,134 @@
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:-1.000000	X2:0.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:3.000000	X2:-1.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:-0.666667	X2:0.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:0.000000	X2:-1.800000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:-1.000000	X2:0.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:-1.000000	X2:0.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+X1:-1.000000	X2:0.000000
+
+
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 
+--------Quadratic Solver--------
+The program solves the following quadratic equations: 
+
+	ax^2 +bx +c = 0
+
+
+Enter value for a, b & c: 

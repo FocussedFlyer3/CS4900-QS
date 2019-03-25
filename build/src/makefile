@@ -9,8 +9,8 @@ quadSolver:quadSolver.c ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o \
 	 ../../src/solve/qsSolve.o ../../src/putLine/qsPutline.o ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o
 
 test: quadSolver
-	./quadSolver < inputTest.txt
-	
+	cd ../sTest; ./test.sh
+
 clean:
 	echo "Cleaning Files..."
 	rm  -f  *.o

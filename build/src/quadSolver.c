@@ -19,7 +19,7 @@
  *   Necessary error and warnings are printed when necessary.
  *   Program exits on 'exit' input command.
  *
- *   returns: 1 on successful
+ *   returns: 0 on successful
  */
 int main(int argc, char const **argv) {
 
@@ -35,33 +35,27 @@ int main(int argc, char const **argv) {
   //program prompt
   fprintf(stdout, "\n--------Quadratic Solver--------\nThe program solves the following quadratic equations: \n\n\tax^2 +bx +c = 0\n\n");
 
-  while((ret = qsGetLine(line,4098)) > 0){
+  ret = qsGetLine(line,4098);
     if(ret < 0){
       qsError(ret);
-      continue;
-
-    } else if (strncmp(line, "exit",strlen("exit")) == 0){
-      fprintf(stdout, "Program Exits!\n\n");
-      break;
-
+      exit(-1);
     }
 
     //validates input file and place seperate a,b,c values
     ret = qsValidate(line,4098, &a, &b, &c);
     if(ret < 0){
       qsError(ret);
-      continue;
+      exit(-1);
     }
 
     //solve roots values
     ret = qsSolve(a, b, c, &x1, &x2);
     if(ret < 0){
       qsError(ret);
-      continue;
+      exit(-1);
     }
 
-    fprintf(stdout, "X1:%lf\tX2:%lf\n\n", x1,x2);
-  }
+    fprintf(stdout, "\nX1:%lf\tX2:%lf\n\n", x1,x2);
 
   return 0;
 }

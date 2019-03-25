@@ -1,0 +1,23 @@
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1 -2 -3
+ 	nLine: 4098
+ 	Return Value: 1 -2 -3
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:1 -2 -3
+ 	nLine:4098
+ 	Returns:
+ 		a:1.000000
+ 		b:-2.000000
+ 		c:-3.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:1.000000
+ 	b:-2.000000
+ 	c:-3.000000
+ 	numRoots:16
+ 	Return Value:
+ 		x1:3.000000
+ 		x2:-1.000000
+

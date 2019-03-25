@@ -17,7 +17,7 @@
 int qsGetLine(char *line, int nLine){
 
   //prompt for user input
-  fprintf(stdout, "Enter value for a, b & c: ");
+  fprintf(stdout, "\nEnter value for a, b & c: ");
 
   //obtain user input
   char * ret = fgets(line, nLine*sizeof(char), stdin);
