@@ -1,0 +1,1 @@
+int qsHelp(int index);

@@ -14,7 +14,7 @@
  */
 int qsPutline(char* s){
 
-    puts(s);
+       puts(s);
 
     //LOGGING STARTS
       char buffer[1024];
