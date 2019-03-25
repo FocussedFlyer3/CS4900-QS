@@ -16,7 +16,7 @@
  *   c: float value of third coeeficient (c)
  *
  *   returns: 0 on successful computation of roots value
- *            -1 when there is no real roots exist
+ *            -7 when there is no real roots exist
  */
 int qsSolve(double a, double b, double c, double *x1, double *x2){
 
@@ -35,14 +35,14 @@ int qsSolve(double a, double b, double c, double *x1, double *x2){
         temp = sqrt(numRoots);
 
         if(temp < 0){
-          return -1;
+          return -8;
         }
 
         *x1 = ((-b) + temp) / (2*a);
         *x2 = ((-b) - temp) / (2*a);
 
     } else if (numRoots < 0){
-        ret = -1;
+        ret = -7;
     }
 
     //LOGGING STARTS
