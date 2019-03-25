@@ -11,15 +11,16 @@
  *   line: a pointer to store inputs
  *   nLine: number of characters expected to be stored
  *
- *   returns: 0 on successful
+ *   returns: 1 on successful
+ *            -6 on unsuccesful
  */
 int qsGetLine(char *line, int nLine){
 
   //prompt for user input
-  fprintf(stdout, "Enter value for a, b & c: ");
+  fprintf(stdout, "\nEnter value for a, b & c: ");
 
   //obtain user input
-  fgets(line, nLine*sizeof(char), stdin);
+  char * ret = fgets(line, nLine*sizeof(char), stdin);
 
   //Logging start//
     char buffer[1024];
@@ -27,5 +28,12 @@ int qsGetLine(char *line, int nLine){
     qsLog(buffer);
   //Logging end//
 
-  return 0;
+  if(ret == NULL){
+    return -6;
+
+  } else {
+    return 1;
+
+  }
+
 }

@@ -1,0 +1,1 @@
+int qsError(int errorNum);
