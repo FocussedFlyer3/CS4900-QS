@@ -20,7 +20,7 @@
  *
  *   returns: 0 on successful
  *            Negative Integer on error
- *            -1 when user's input format is wrong
+ *            -1 when user's input format is invalid
  *               * NAN values (-2)
  *               * INFINITE values (-3)
  *               * SUBNORMAL values (-4)

@@ -7,6 +7,7 @@
 #include "../../src/solve/qsSolve.h"
 #include "../../src/putLine/qsPutline.h"
 #include "../../src/error/qsError.h"
+#include "../../src/help/qsHelp.h"
 
 /*
  * Function: main
@@ -28,6 +29,7 @@ int main(int argc, char const **argv) {
   double a, b, c;           //to store coefficients values
   double x1, x2;            //to store roots values
   int ret;                  //temporary store functions return value
+  int index;                //temporary store help index value
 
   //LOG HEADER
   qsLog("------Quadratic Solver LOG FILE------");
@@ -35,10 +37,29 @@ int main(int argc, char const **argv) {
   //program prompt
   fprintf(stdout, "\n--------Quadratic Solver--------\nThe program solves the following quadratic equations: \n\n\tax^2 +bx +c = 0\n\n");
 
-  ret = qsGetLine(line,4098);
+    ret = qsGetLine(line,4098);
     if(ret < 0){
       qsError(ret);
       exit(-1);
+    }
+
+    //check if user inputs help function
+    if(strstr(line,"help") != NULL){
+      index  = 0;
+
+        if(strncmp(line,"help qsGetLine",strlen("help qsGetLine")) == 0){
+          index = 1;
+
+        } else if (strncmp(line,"help qsLog",strlen("help qsLog")) == 0){
+          index = 2;
+
+        } else if (strncmp(line,"help qsValidate",strlen("help qsValidate")) == 0){
+          index = 3;
+
+        }
+
+      qsHelp(index);
+      return 0;
     }
 
     //validates input file and place seperate a,b,c values

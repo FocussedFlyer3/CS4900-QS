@@ -1,16 +1,20 @@
 CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 
-quadSolver:quadSolver.c ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o \
-	../../src/error/qsError.o ../../src/validate/qsValidate.o ../../src/solve/qsSolve.o \
-	../../src/putLine/qsPutline.o
-	echo "Compiling program..."
-	$(CC) $(CFLAGS) -o quadSolver quadSolver.c ../../src/error/qsError.o ../../src/validate/qsValidate.o \
-	 ../../src/solve/qsSolve.o ../../src/putLine/qsPutline.o ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o
+quadSolver.o: quadSolver.c
+	$(CC) -c quadSolver.c
 
-test: quadSolver
+compile:quadSolver.c ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o \
+	../../src/error/qsError.o ../../src/validate/qsValidate.o ../../src/solve/qsSolve.o \
+	../../src/putLine/qsPutline.o ../../src/help/qsHelp.o
+	$(CC) $(CFLAGS) -o quadSolver quadSolver.c ../../src/error/qsError.o ../../src/validate/qsValidate.o \
+	 ../../src/solve/qsSolve.o ../../src/putLine/qsPutline.o ../../src/log/qsLog.o ../../src/getLine/qsGetLine.o \
+	 ../../src/help/qsHelp.o
+
+test: ../quadSolver
 	cd ../sTest; ./test.sh
 
 clean:
-	echo "Cleaning Files..."
+	$(info Cleaning Files...)
 	rm  -f  *.o
+	cd ../../src && $(MAKE) clean
