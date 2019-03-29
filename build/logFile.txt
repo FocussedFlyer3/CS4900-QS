@@ -1,25 +1,114 @@
 ------Quadratic Solver LOG FILE------
 int qsGetLine(char *line, int nLine):
- 	line: 1 -2 -3
+ 	line: 1  2 1
  	nLine: 4098
- 	Return Value: 1 -2 -3
+ 	Return Value: 1  2 1
 
 qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:1 -2 -3
+ 	line:1  2 1
  	nLine:4098
  	Returns:
  		a:1.000000
- 		b:-2.000000
- 		c:-3.000000
+ 		b:2.000000
+ 		c:1.000000
 
 qsSolve(double a, double b, double c, double *x1, double *x2):
  	a:1.000000
- 	b:-2.000000
- 	c:-3.000000
- 	numRoots:16
+ 	b:2.000000
+ 	c:1.000000
+ 	numRoots:0
  	Return Value:
- 		x1:3.000000
- 		x2:-1.000000
+ 		x1:-1.000000
+ 		x2:0.000000
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1 2 1a
+ 	nLine: 4098
+ 	Return Value: 1 2 1a
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:1 2 1a
+ 	nLine:4098
+ 	Returns:
+ 		a:1.000000
+ 		b:2.000000
+ 		c:1.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:1.000000
+ 	b:2.000000
+ 	c:1.000000
+ 	numRoots:0
+ 	Return Value:
+ 		x1:-1.000000
+ 		x2:0.000000
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: inf 2 1
+ 	nLine: 4098
+ 	Return Value: inf 2 1
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:inf 2 1
+ 	nLine:4098
+ 	Returns:
+ 		a:inf
+ 		b:2.000000
+ 		c:1.000000
+
+int qsError(int errorNum):
+ 	errorNum: -3
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1e38 2e38 1e38
+ 	nLine: 4098
+ 	Return Value: 1e38 2e38 1e38
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:1e38 2e38 1e38
+ 	nLine:4098
+ 	Returns:
+ 		a:99999999999999997748809823456034029568.000000
+ 		b:199999999999999995497619646912068059136.000000
+ 		c:99999999999999997748809823456034029568.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:99999999999999997748809823456034029568.000000
+ 	b:199999999999999995497619646912068059136.000000
+ 	c:99999999999999997748809823456034029568.000000
+ 	numRoots:0
+ 	Return Value:
+ 		x1:-1.000000
+ 		x2:0.000000
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 123456789 2 1
+ 	nLine: 4098
+ 	Return Value: 123456789 2 1
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:123456789 2 1
+ 	nLine:4098
+ 	Returns:
+ 		a:123456789.000000
+ 		b:2.000000
+ 		c:1.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:123456789.000000
+ 	b:2.000000
+ 	c:1.000000
+ 	numRoots:-493827152
+ 	Return Value:
+ 		x1:0.000000
+ 		x2:0.000000
+
+int qsError(int errorNum):
+ 	errorNum: -7
 
 ------Quadratic Solver LOG FILE------
 int qsGetLine(char *line, int nLine):
@@ -29,110 +118,139 @@ int qsGetLine(char *line, int nLine):
 
 ------Quadratic Solver LOG FILE------
 int qsGetLine(char *line, int nLine):
- 	line: 1 2 3
+ 	line: 1e39 1 2
  	nLine: 4098
- 	Return Value: 1 2 3
+ 	Return Value: 1e39 1 2
 
 qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:1 2 3
+ 	line:1e39 1 2
  	nLine:4098
  	Returns:
- 		a:1.000000
- 		b:2.000000
- 		c:3.000000
-
-qsSolve(double a, double b, double c, double *x1, double *x2):
- 	a:1.000000
- 	b:2.000000
- 	c:3.000000
- 	numRoots:-8
- 	Return Value:
- 		x1:0.000000
- 		x2:0.000000
-
-int qsError(int errorNum):
- 	errorNum: -7
-
-------Quadratic Solver LOG FILE------
-int qsGetLine(char *line, int nLine):
- 	line: 1 -2 -3
- 	nLine: 4098
- 	Return Value: 1 -2 -3
-
-qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:1 -2 -3
- 	nLine:4098
- 	Returns:
- 		a:1.000000
- 		b:-2.000000
- 		c:-3.000000
-
-qsSolve(double a, double b, double c, double *x1, double *x2):
- 	a:1.000000
- 	b:-2.000000
- 	c:-3.000000
- 	numRoots:16
- 	Return Value:
- 		x1:3.000000
- 		x2:-1.000000
-
-------Quadratic Solver LOG FILE------
-int qsGetLine(char *line, int nLine):
- 	line: Inf 1 2
- 	nLine: 4098
- 	Return Value: Inf 1 2
-
-qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:Inf 1 2
- 	nLine:4098
- 	Returns:
- 		a:inf
+ 		a:999999999999999939709166371603178586112.000000
  		b:1.000000
  		c:2.000000
 
 int qsError(int errorNum):
- 	errorNum: -3
+ 	errorNum: -5
 
 ------Quadratic Solver LOG FILE------
 int qsGetLine(char *line, int nLine):
- 	line: -Inf 2 3
+ 	line: 1e38 1 2
  	nLine: 4098
- 	Return Value: -Inf 2 3
+ 	Return Value: 1e38 1 2
 
 qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:-Inf 2 3
+ 	line:1e38 1 2
  	nLine:4098
  	Returns:
- 		a:-inf
- 		b:2.000000
- 		c:3.000000
-
-int qsError(int errorNum):
- 	errorNum: -3
-
-------Quadratic Solver LOG FILE------
-int qsGetLine(char *line, int nLine):
- 	line: 3.0 2.0 1.0
- 	nLine: 4098
- 	Return Value: 3.0 2.0 1.0
-
-qsValidate(char *line, int nLine, double *a, double *b, double *c):
- 	line:3.0 2.0 1.0
- 	nLine:4098
- 	Returns:
- 		a:3.000000
- 		b:2.000000
- 		c:1.000000
+ 		a:99999999999999997748809823456034029568.000000
+ 		b:1.000000
+ 		c:2.000000
 
 qsSolve(double a, double b, double c, double *x1, double *x2):
- 	a:3.000000
- 	b:2.000000
- 	c:1.000000
- 	numRoots:-8
+ 	a:99999999999999997748809823456034029568.000000
+ 	b:1.000000
+ 	c:2.000000
+ 	numRoots:-2147483648
  	Return Value:
  		x1:0.000000
  		x2:0.000000
 
 int qsError(int errorNum):
  	errorNum: -7
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1e39 1e39 1e39
+ 	nLine: 4098
+ 	Return Value: 1e39 1e39 1e39
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:1e39 1e39 1e39
+ 	nLine:4098
+ 	Returns:
+ 		a:999999999999999939709166371603178586112.000000
+ 		b:999999999999999939709166371603178586112.000000
+ 		c:999999999999999939709166371603178586112.000000
+
+int qsError(int errorNum):
+ 	errorNum: -5
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1e38 1 2
+ 	nLine: 4098
+ 	Return Value: 1e38 1 2
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:1e38 1 2
+ 	nLine:4098
+ 	Returns:
+ 		a:99999999999999997748809823456034029568.000000
+ 		b:1.000000
+ 		c:2.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:99999999999999997748809823456034029568.000000
+ 	b:1.000000
+ 	c:2.000000
+ 	numRoots:-2147483648
+ 	Return Value:
+ 		x1:0.000000
+ 		x2:0.000000
+
+int qsError(int errorNum):
+ 	errorNum: -7
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 1e39
+ 	nLine: 4098
+ 	Return Value: 1e39
+
+int qsError(int errorNum):
+ 	errorNum: -1
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 3.4e38 1 2
+ 	nLine: 4098
+ 	Return Value: 3.4e38 1 2
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:3.4e38 1 2
+ 	nLine:4098
+ 	Returns:
+ 		a:339999999999999996123846586046231871488.000000
+ 		b:1.000000
+ 		c:2.000000
+
+qsSolve(double a, double b, double c, double *x1, double *x2):
+ 	a:339999999999999996123846586046231871488.000000
+ 	b:1.000000
+ 	c:2.000000
+ 	numRoots:-2147483648
+ 	Return Value:
+ 		x1:0.000000
+ 		x2:0.000000
+
+int qsError(int errorNum):
+ 	errorNum: -7
+
+------Quadratic Solver LOG FILE------
+int qsGetLine(char *line, int nLine):
+ 	line: 3.5e38 1 2
+ 	nLine: 4098
+ 	Return Value: 3.5e38 1 2
+
+qsValidate(char *line, int nLine, double *a, double *b, double *c):
+ 	line:3.5e38 1 2
+ 	nLine:4098
+ 	Returns:
+ 		a:350000000000000001565567347835409530880.000000
+ 		b:1.000000
+ 		c:2.000000
+
+int qsError(int errorNum):
+ 	errorNum: -5
 

@@ -19,6 +19,7 @@
  *
  *   Necessary error and warnings are printed when necessary.
  *   Program exits on 'exit' input command.
+ *   Program provides helpful details on 'help' input command.
  *
  *   returns: 0 on successful
  */
